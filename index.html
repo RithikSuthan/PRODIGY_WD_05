@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Weather App</title>
+</head>
+<!-- <body style="background-image: url('assests/daniel-leone-g30P1zcOzXo-unsplash.jpg');background-repeat: no-repeat;background-size: cover;color: white;"> -->
+    <body style="  margin: 0; /* Remove default body margin */
+    padding: 0;
+    background-image: url('assests/daniel-leone-g30P1zcOzXo-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;">
+    <div style="display: flex;flex-direction: column;justify-content:space-between;align-items: center;">
+        <div style="display: flex;">
+            <input type="text" name="place" id="search">&nbsp;<button type="button" onclick="searchPlace()">Search</button> 
+        </div><br><br>
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <span id="place"></span><br>
+            <span id="date"></span>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex;">
+            <span style="font-weight:bolder;font-size: xx-large;" id="temperature">
+                </span>
+        </div>
+        <br><br>
+        <div id="feels" style="display: flex;"><span></span></div><br>
+    </div>
+
+</body>
+</html>
